@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>joya</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background: #f9f9f9;
+    }
+
+    .header{
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .card1{
+        border: 2px solid black;
+        padding: 10px;
+        width: 300px;
+        text-align: center;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        transition: transform .3s;
+    }
+
+    .card1:hover{
+        transform: scale(1.03);
+    }
+
+    .card1 img{
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    p{
+        margin-top: 8px;
+        font-size: 15px;
+        color: #444;
+    }
+
+    /* ✅ Responsive Breakpoint - Mobile Screens */
+    @media (max-width: 600px){
+        .cards{
+            flex-direction: column;
+        }
+
+        .card1{
+            width: 90%;
+        }
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+    <h2 style="color: red;"><u><i>Jewel.atelier</i></u></h2>
+</div>
+
+<div class="cards">
+
+    <div class="card1">
+        <h3>Crystal Glass</h3><br>
+
+        <a href="https://www.notion.so/jewel-crystal-glass-29ec6dfd79dd80519b37db48f3c2acef?source=copy_link">
+            <img src="images/WhatsApp Image 2025-10-31 at 19.05.56_7bb4979f.jpg" alt="crystal glass">
+        </a>
+        <p>Tap on the image to see more</p>
+    </div>
+
+    <div class="card1">
+        <h3>Crystal Glass</h3>
+        <a href="https://www.notion.so/jewel-crystal-glass-29ec6dfd79dd80519b37db48f3c2acef?source=copy_link">
+            <img src="images/WhatsApp Image 2025-10-31 at 19.05.56_7bb4979f.jpg" alt="crystal glass">
+        </a>
+        <p>Tap on the image to see more</p>
+    </div>
+
+</div>
+
+</body>
+</html>
